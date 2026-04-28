@@ -10,7 +10,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "http://it-24102532-wmt-test-2026-y2-s2.vercel.app",
+  "https://it-24102532-wmt-test-2026-y2-s2.vercel.app/",
 ];
 
 const corsOptions = {
