@@ -27,6 +27,12 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    barcodeNumber:{
+      type: String,
+      required: [true, "Barcode number is required"],
+      trim: true,
+      unique: true,
+    }
   },
   { timestamps: true }
 );

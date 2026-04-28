@@ -8,6 +8,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       price: "",
       description: "",
       imageUrl: "",
+      barcodeNumber: "",
     }
   );
 
@@ -51,6 +52,9 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         onChange={handleChange}
         required
       />
+
+      <label>Barcode Number</label>
+      <input name="barcodeNumber" value={formData.barcodeNumber} onChange={handleChange} required />
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />

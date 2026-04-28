@@ -20,7 +20,9 @@ app.use("/api/items", itemRoutes);
 const PORT = process.env.PORT || 5000;
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI, {
+    dbName:"wmt_test"
+  })
   .then(() => {
     console.log("MongoDB connected");
     app.listen(PORT, () => {
